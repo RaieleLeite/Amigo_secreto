@@ -1,0 +1,153 @@
+:root { 
+    --color-primary: #FF6B6B;
+    --color-secondary: #4ECDC4;
+    --color-tertiary: #FFE66D;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80vw;
+    
+    
+}
+
+/* Imagem */
+.imagem {
+    width: 40vw;
+    
+}
+
+/* Seção de entrada */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: solid 2px var(--color-tertiary);
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+   
+}
+
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #e6c84d;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#listaTitulo{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+
+.result-list,  #resultadoLista{
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Botão de sortear */
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    font-size: 16px;
+}
+
+.button-draw:first-child:hover{
+    background-color: #3bb3a5;
+}
+
+
+.button-draw:disabled{
+    background-color: #444444;
+}
+

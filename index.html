@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/handshake.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto</title>
+</head>
+<body>
+    <main>
+        <section class="img-section">
+            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto" class="imagem">
+        </section>
+        
+        <section class="input-section">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <h2 class="sub-title">Digite o nome dos seus amigos</h2>
+            
+            <div class="input-wrapper">
+                <input type="text" id="amigo-input" class="input-name" placeholder="Digite um nome">
+                <button class="button-add" id="adicionarAmigo" onclick="adicionarAmigo()">Adicionar</button>
+            </div>
+           
+            <ul id="listaAmigos" class="name-list" aria-live="polite" role="list"><p id="listaTitulo"></p></ul>
+            <ul id="resultado" class="result-list" aria-live="polite"><p id="resultadoLista"></p></ul>
+
+            <div class="button-container">
+                <button class="button-draw" id="sortearAmigo" aria-label="Sortear amigo secreto" onclick="sortearAmigo()">
+                    Sortear amigo
+                </button>
+                <button class="button-draw" id="sorteioGeral" aria-label="Sortear todos os amigos" onclick="sortearTodosAmigos()" disabled>
+                    Sorteio geral
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
